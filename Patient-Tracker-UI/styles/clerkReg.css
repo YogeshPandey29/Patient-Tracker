@@ -1,0 +1,137 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+#header-container {
+    background-color: #000000;
+    height: 100px;
+}
+
+#company-logo {
+    margin-left: 20px;
+    display: inline-block;
+    padding-top: 50px;
+    width: 120px;
+    height: 25px;
+}
+
+header h2 {
+    display: inline-block;
+    margin-left: 430px;
+    text-align: center;
+    font-size: 40px;
+    color: #ffffff;
+    font-family: 'Manrope', sans-serif;
+    padding-top: 20px;
+}
+
+#form-container {
+    background-color: #afd275;
+    height: 830px;
+}
+
+#form {
+    padding-left: 550px;
+    padding-top: 50px;
+}
+
+#clerk-name {
+    margin-left: 140px;
+}
+
+#clerk-age {
+    margin-left: 157px;
+}
+
+#clerk-address {
+    margin-left: 117px;
+}
+
+#clerk-password {
+    margin-left: 103px;
+}
+
+#clerk-doj {
+    margin-left: 40px;
+}
+
+#clerk-contact {
+    margin-left: 38px;
+}
+
+#clerk-email {
+    margin-left: 120px;
+}
+
+#clerk-id {
+    margin-left: 173px;
+}
+
+label {
+    font-weight: lighter;
+    font-size: 20px;
+    font-family: 'Manrope', sans-serif;
+}
+
+input {
+    padding: 3px 2px 3px 2px;
+    width: 200px;
+    height: 25px;
+    border-style: groove;
+    border-radius: 5px;
+    font-size: 13px;
+    font-family: 'Manrope', sans-serif;
+}
+
+#submit-btn {
+    width: 150px;
+    height: 35px;
+    background-color: #000000;
+    color: #ffffff;
+    font-size: 15px;
+    border-radius: 5px;
+    border-style: none;
+    font-family: 'Manrope', sans-serif;
+    margin-top: 50px;
+}
+
+#reset-btn {
+    width: 150px;
+    height: 36px;
+    margin-left: 70px;
+    background-color: #000000;
+    color: #ffffff;
+    font-size: 15px;
+    border-style: none;
+    border-radius: 5px;
+    font-family: 'Manrope', sans-serif;
+}
+
+#clerk-login-btn {
+    width: 150px;
+    height: 36px;
+    margin-top: 60px;
+    margin-left: 670px;
+    background-color: #000000;
+    color: #ffffff;
+    font-size: 15px;
+    border-style: none;
+    border-radius: 5px;
+    font-family: 'Manrope', sans-serif;
+}
+
+
+
+#footer-container {
+    height: 40px;
+    background-color: #000000;
+}
+
+#footer-text {
+    padding-top: 9px;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: lighter;
+    font-family: 'Manrope', sans-serif;
+}

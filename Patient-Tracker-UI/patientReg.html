@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/patientReg.css">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="./scripts/patientRegValidator.js"></script>
+    <title>New Patient Registration</title>
+</head>
+<body>
+    <header id="header-container">
+        <a href="./index.html"><img src="./images/company-logo.png" alt="Cognizant Logo" id="company-logo"></a>
+        <h2>Register New Patient</h2>
+    </header>
+    <div id="form-container">
+        <form action="#" onsubmit="return patientRegValidation()" id="form">
+            <label for="patient-number">Patient Number:</label>
+            <input type="text" name="patient-number" id="patient-number" placeholder="Unique Number" autocomplete="off" required> <br>
+            <span id="patient-number-notif" style="color: #fa0000; font-size: 13px; font-family: 'Manrope', sans-serif; font-style: italic;"></span> <br>
+            <br>
+            <label for="patient-name">Patient Name:</label>
+            <input type="text" name="patient-name" id="patient-name" placeholder="Name" autocomplete="off" required> <br>
+            <span id="patient-name-notif" style="color: #fa0000; font-size: 13px; font-family: 'Manrope', sans-serif; font-style: italic;"></span> <br>
+            <br>
+            <label for="patient-age">Patient Age:</label>
+            <input type="text" name="patient-age" id="patient-age" placeholder="Age" autocomplete="off" required> <br>
+            <span id="patient-age-notif" style="color: #fa0000; font-size: 13px; font-family: 'Manrope', sans-serif; font-style: italic;"></span> <br>
+            <br>
+            <label for="patient-address">Patient Address:</label>
+            <input type="text" name="patient-address" id="patient-address" placeholder="Address" autocomplete="off" required> <br>
+            
+            <br>
+            <label for="patient-contact">Patient Contact Number:</label>
+            <input type="text" name="patient-contact" id="patient-contact" placeholder="Cell Number" autocomplete="off" required> <br>
+            <span id="patient-contact-notif" style="color: #fa0000; font-size: 13px; font-family: 'Manrope', sans-serif; font-style: italic;"></span> <br>
+            <br>
+            <label for="patient-email">Patient Email ID:</label>
+            <input type="text" name="patient-email" id="patient-email" placeholder="Email ID" autocomplete="off" required> <br>
+            <span id="patient-email-notif" style="color: #fa0000; font-size: 13px; font-family: 'Manrope', sans-serif; font-style: italic;"></span> <br>
+            <br>
+            <label for="patient-gender">Patient Gender:</label>
+            <input type="text" name="patient-gender" id="patient-gender" placeholder="Gender" autocomplete="off" required> <br>
+            <span id="patient-gender-notif" style="color: #fa0000; font-size: 13px; font-family: 'Manrope', sans-serif; font-style: italic;"></span> <br>
+            <br>
+            
+            <!--  <label for="clerk-id">Clerk ID:</label>
+            <input type="text" name="clerk-id" id="clerk-id" placeholder="Unique ID"> <br>
+            <br>    --->
+
+            <button type="submit" id="submit-btn">Register Patient</button>
+            <button type="reset" id="reset-btn">Reset Entries</button>
+        </form>
+
+        <a href="./patientLogin.html"><button type="submit" id="patient-login-btn">Or Login as Patient</button></a>
+    </div>
+    <footer id="footer-container">
+        <h3 id="footer-text">&copy; 2021 Created Under GenC Training Programme</h3>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/clerkReg.css">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500&display=swap" rel="stylesheet">
+    <script text="text/javascript" src="./scripts/clerkRegValidation.js"></script>
+    <title>New Clerk Registration</title>
+</head>
+<body>
+    <header id="header-container">
+        <a href="./index.html"><img src="./images/company-logo.png" alt="Cognizant Logo" id="company-logo"></a>
+        <h2>Register New Clerk</h2></header>
+    <div id="form-container">
+        <form action="#" id="form" onsubmit="return validateForm()">
+            <label for="clerk-name">Clerk Name:</label>
+            <input type="text" name="clerk-name" id="clerk-name" placeholder="Name" autocomplete="off" required> <br>
+            <span id="clerk-name-notif" style="color: #fa0000; font-size: 13px; font-family: 'Manrope', sans-serif; font-style: italic;"></span> <br>
+            <br>
+            <label for="clerk-age">Clerk Age:</label>
+            <input type="number" name="clerk-age" id="clerk-age" placeholder="Age" autocomplete="off" required> <br>
+            <span id="clerk-age-notif" style="color: #fa0000; font-size: 13px; font-family: 'Manrope', sans-serif; font-style: italic;"></span> <br>
+            <br>
+            <label for="clerk-address">Clerk Address:</label>
+            <input type="text" name="clerk-address" id="clerk-address" placeholder="Correspondence Address" autocomplete="off" required> <br>
+            <br>
+            <label for="clerk-password">Clerk Password:</label>
+            <input type="password" name="clerk-password" id="clerk-password" placeholder="Password" autocomplete="off" required> <br>
+            <span id="clerk-pass-notif" style="color: #fa0000; font-size: 13px; font-family: 'Manrope', sans-serif; font-style: italic;"></span> <br>
+            <br>
+            <label for="clerk-doj">Clerk's Date of Joining:</label>
+            <input type="date" name="clerk-doj" id="clerk-doj" placeholder="Date of Joining" autocomplete="off"> <br>
+            <br>
+            <label for="clerk-contact">Clerk Contact Number:</label>
+            <input type="text" name="clerk-contact" id="clerk-contact" placeholder="Cell Number" autocomplete="off" required> <br>
+            <span id="clerk-contact-notif" style="color: #fa0000; font-size: 13px; font-family: 'Manrope', sans-serif; font-style: italic;"></span><br>
+            <br>
+            <label for="clerk-email">Clerk Email ID:</label>
+            <input type="text" name="clerk-email" id="clerk-email" placeholder="Email" autocomplete="off"> <br>
+            <span id="clerk-email-notif" style="color: #fa0000; font-size: 13px; font-family: 'Manrope', sans-serif; font-style: italic;"></span> <br>
+            <br>
+            <label for="clerk-id">Clerk ID:</label>
+            <input type="text" name="clerk-id" id="clerk-id" placeholder="Unique ID" autocomplete="off" required> <br>
+            <span id="clerk-id-notif" style="color: #fa0000; font-size: 13px; font-family: 'Manrope', sans-serif; font-style: italic;"></span> <br>
+            <br>
+
+            <button type="submit" id="submit-btn">Register Staff</button>
+            <button type="reset" id="reset-btn">Reset Entries</button>
+        </form>
+        <a href="./clerkLogin.html"><button type="submit" id="clerk-login-btn">Or Login as Clerk</button></a>
+    </div>
+    <footer id="footer-container">
+        <h3 id="footer-text">&copy; 2021 Created Under GenC Training Programme</h3>
+    </footer>
+</body>
+</html>

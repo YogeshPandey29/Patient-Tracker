@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/patientLogin.css">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="./scripts/patientLoginValidation.js"></script>
+    <title>Patient Login</title>
+</head>
+<body>
+    <header id="header-container">
+        <a href="./index.html"><img src="./images/company-logo.png" alt="Cognizant Logo" id="company-logo"></a>
+        <h2>Login as Patient</h2>
+    </header>
+    <div id="form-container">
+        <form action="#" onsubmit="return patientLoginValidator()" id="form">
+            <label for="patient-id">Patient ID:</label>
+            <input type="text" name="patient-id" id="patient-id" placeholder="Unique ID" autocomplete="off" required> <br>
+            <span id="patient-id-notif" style="color: #fa0000; font-size: 13px; font-family: 'Manrope', sans-serif; font-style: italic;"></span> <br>
+            <br>
+            <label for="patient-password">Patient Password:</label>
+            <input type="password" name="patient-password" id="patient-password" placeholder="Password" autocomplete="off" required> <br>
+            <span id="patient-pass-notif" style="color: #fa0000; font-size: 13px; font-family: 'Manrope', sans-serif; font-style: italic;"></span> <br>
+            <br>
+            <a href="#"><button type="submit" id="submit-btn">Login</button></a>
+            <button type="reset" id="reset-btn">Reset Entries</button>
+            <button type="submit" id="clerk-login-btn">Having Problem?</button>
+        </form>
+    </div>
+    <footer id="footer-container">
+        <h3 id="footer-text">&copy; 2021 Created Under GenC Training Programme</h3>
+    </footer>
+</body>
+</html>

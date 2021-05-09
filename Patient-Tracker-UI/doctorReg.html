@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/doctorReg.css">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="./scripts/doctorRegValidator.js"></script>
+    <title>New Doctor Registration</title>
+</head>
+<body>
+    <header id="header-container">
+        <a href="./index.html"><img src="./images/company-logo.png" alt="Cognizant Logo" id="company-logo"></a>
+        <h2>Register New Doctor</h2>
+    </header>
+    <div id="form-container">
+        <form action="#" onsubmit="return docRegValidation()" id="form">
+            <label for="doctor-name">Doctor Name:</label>
+            <input type="text" name="doctor-name" id="doctor-name" placeholder="Name" autocomplete="off" required> <br>
+            <span id="doctor-name-notif" style="color: #fa0000; font-size: 13px; font-family: 'Manrope', sans-serif; font-style: italic;"></span> <br>
+            <br>
+            <label for="doctor-qualification">Doctor Qualification:</label>
+            <input type="text" name="doctor-qualification" id="doctor-qualification" placeholder="Qualification" autocomplete="off" required> <br>
+            <br>
+            <label for="doctor-age">Doctor Age:</label>
+            <input type="text" name="doctor-age" id="doctor-age" placeholder="Age" autocomplete="off" required> <br>
+            <span id="doctor-age-notif" style="color: #fa0000; font-size: 13px; font-family: 'Manrope', sans-serif; font-style: italic;"></span> <br>
+            <br>
+            <label for="doctor-address">Doctor Address:</label>
+            <input type="text" name="doctor-address" id="doctor-address" placeholder="Address" autocomplete="off" required> <br>
+            <br>
+            <label for="doctor-experience">Doctor Experience:</label>
+            <input type="text" name="doctor-experience" id="doctor-experience" placeholder="Experience" autocomplete="off" required> <br>
+            <span id="doctor-exp-notif" style="color: #fa0000; font-size: 13px; font-family: 'Manrope', sans-serif; font-style: italic;"></span> <br>
+            <br>
+            <label for="doctor-contact">Doctor Contact Number:</label>
+            <input type="text" name="doctor-contact" id="doctor-contact" placeholder="Cell Number" autocomplete="off" required> <br>
+            <span id="doctor-contact-notif" style="color: #fa0000; font-size: 13px; font-family: 'Manrope', sans-serif; font-style: italic;"></span> <br>
+            <br>
+            <label for="doctor-email">Doctor Email ID:</label>
+            <input type="text" name="doctor-email" id="doctor-email" placeholder="Email" autocomplete="off" required> <br>
+            <span id="doctor-email-notif" style="color: #fa0000; font-size: 13px; font-family: 'Manrope', sans-serif; font-style: italic;"></span> <br>
+            <br>
+            
+            <!--  <label for="clerk-id">Clerk ID:</label>
+            <input type="text" name="clerk-id" id="clerk-id" placeholder="Unique ID"> <br>
+            <br>    --->
+
+            <button type="submit" id="submit-btn">Register Staff</button>
+            <button type="reset" id="reset-btn">Reset Entries</button>
+        </form>
+
+        <a href="./doctorLogin.html"><button type="submit" id="doctor-login-btn">Or Login as Doctor</button></a>
+    </div>
+    <footer id="footer-container">
+        <h3 id="footer-text">&copy; 2021 Created Under GenC Training Programme</h3>
+    </footer>
+</body>
+</html>

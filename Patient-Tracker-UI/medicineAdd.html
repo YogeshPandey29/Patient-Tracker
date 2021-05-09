@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/medicineAdd.css">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="./scripts/medicineAdd.js"></script>
+    <title>Medicine Inventory</title>
+</head>
+<body>
+    <header id="header-container">
+        <a href="./index.html"><img src="./images/company-logo.png" alt="Cognizant Logo" id="company-logo"></a>
+        <h2>Add Medicine Stock</h2>
+    </header>
+    <div id="form-container">
+        <form action="#" onsubmit="return medStockController()" id="form">
+            <label for="med-id">Medicine ID:</label>
+            <input type="text" name="med-id" id="med-id" placeholder="Unique Number" autocomplete="off" required> <br>
+            <span id="med-id-notif" style="color: #fa0000; font-size: 13px; font-family: 'Manrope', sans-serif; font-style: italic;"></span> <br>
+            <br>
+            <label for="doctor-id">Doctor ID:</label>
+            <input type="text" name="doctor-id" id="doctor-id" placeholder="Doctor's ID" autocomplete="off"> <br>
+            <span id="doctor-id-notif" style="color: #fa0000; font-size: 13px; font-family: 'Manrope', sans-serif; font-style: italic;"></span> <br>
+            <br>
+            <label for="med-name">Medicine Name:</label>
+            <input type="text" name="med-name" id="med-name" placeholder="Medicine Name" autocomplete="off" required> <br>
+            <span id="med-name-notif" style="color: #fa0000; font-size: 13px; font-family: 'Manrope', sans-serif; font-style: italic;"></span> <br>
+            <br>
+            <label for="company-name">Company Name:</label>
+            <input type="text" name="company-name" id="company-name" placeholder="Company Name"> <br>
+            <br>
+            <label for="med-type">Medicine Type:</label>
+            <input type="text" name="med-type" id="med-type" placeholder="Medicine Type" autocomplete="off" required> <br>
+            <span id="med-type-notif" style="color: #fa0000; font-size: 13px; font-family: 'Manrope', sans-serif; font-style: italic;"></span> <br>
+            <br>
+            <label for="storage-type">Medicine Storage Type:</label>
+            <input type="text" name="storage-type" id="storage-type" placeholder="Storage Type" autocomplete="off" required> <br>
+            <span id="storage-type-notif" style="color: #fa0000; font-size: 13px; font-family: 'Manrope', sans-serif; font-style: italic;"></span> <br>
+            <br>
+            <label for="med-quantity">Medicine Quantity:</label>
+            <input type="text" name="med-quantity" id="med-quantity" placeholder="Quantity" autocomplete="off"required> <br>
+            <span id="med-qty-notif" style="color: #fa0000; font-size: 13px; font-family: 'Manrope', sans-serif; font-style: italic;"></span> <br>
+            <br>
+            <label for="med-price">Price Per Unit:</label>
+            <input type="text" name="med-price" id="med-price" placeholder="Medicine Cost" autocomplete="off" required> <br>
+            <span id="med-price-notif" style="color: #fa0000; font-size: 13px; font-family: 'Manrope', sans-serif; font-style: italic;"></span> <br>
+            <br>
+            <label for="med-mfg-date">Date of Manufacturing:</label>
+            <input type="date" name="med-mfg-date" id="med-mfg-date" placeholder="Mfg Date" autocomplete="off" required> <br>
+            <span id="mfg-date-notif" style="color: #fa0000; font-size: 13px; font-family: 'Manrope', sans-serif; font-style: italic;"></span> <br>
+            <br>
+            <label for="med-expiry-date">Expiry Date:</label>
+            <input type="date" name="med-expiry-date" id="med-expiry-date" placeholder="Expiry Date" autocomplete="off" required> <br>
+            <span id="exp-date-notif" style="color: #fa0000; font-size: 13px; font-family: 'Manrope', sans-serif; font-style: italic;"></span> <br>
+            <br>
+            
+            <!--  <label for="clerk-id">Clerk ID:</label>
+            <input type="text" name="clerk-id" id="clerk-id" placeholder="Unique ID"> <br>
+            <br>    --->
+
+            <button type="submit" id="submit-btn">Add Medicine</button>
+            <button type="reset" id="reset-btn">Reset Entries</button>
+        </form>
+    </div>
+    <footer id="footer-container">
+        <h3 id="footer-text">&copy; 2021 Created Under GenC Training Programme</h3>
+    </footer>
+</body>
+</html>

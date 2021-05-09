@@ -1,0 +1,128 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+#header-container {
+    height: 150px;
+    background-color: #000000;
+}
+
+#company-logo {
+    margin-left: 20px;
+    display: inline-block;
+    padding-top: 50px;
+    width: 120px;
+    height: 25px;
+}
+
+#header-text {
+    display: inline-block;
+    margin-left: 400px;
+    padding-top: 30px;
+    font-size: 60px;
+    color: #ffffff;
+    font-family: 'Manrope', sans-serif;
+}
+
+#description-container {
+    background-color: #afd275
+}
+
+#description-text {
+    text-align: justify;
+    padding-top: 10px;
+    font-size: 20px;
+    font-weight: lighter;
+    font-family: 'Manrope', sans-serif;
+}
+
+#designation-info {
+    background-color: #afd275;
+}
+
+#text-1 {
+    text-align: center;
+    padding-top: 30px;
+    font-size: 40px;
+    font-family: 'Manrope', sans-serif;
+}
+
+#designation-form-container {
+    height: 50px;
+    margin-top: 40px;
+    background-color: #afd275;
+}
+
+#designation-ques {
+    margin-top: 60px;
+    padding-left: 640px;
+    font-size: 20px;
+    font-family: 'Manrope', sans-serif;
+}
+
+#designation-container {
+    margin-top: 80px;
+    margin-left: 400px;
+}
+
+#btn2, #btn3 {
+    margin-left: 200px;
+}
+
+#btn1, #btn2, #btn3 {
+    background-color: #000000;
+    color: #ffffff;
+    width: 110px;
+    height: 50px;
+    font-size: 20px;
+    font-family: 'Manrope', sans-serif;
+    border-style: groove;
+    border-radius: 10px;
+}
+
+#footer-container {
+    height: 40px;
+    background-color: #000000;
+}
+
+#footer-text {
+    padding-top: 9px;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: lighter;
+    font-family: 'Manrope', sans-serif;
+}
+
+#additional-info-container {
+    background-color: #afd275;
+    height: 290px;
+}
+
+#additional-info-text {
+    text-align: justify;
+    padding-top: 50px;
+    font-size: 20px;
+    font-weight: lighter;
+    font-family: 'Manrope', sans-serif;
+}
+
+#msg {
+    padding-top: 20px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Manrope', sans-serif;
+}
+
+#submit-btn {
+    margin-left: 710px;
+    margin-top: 30px;
+    padding: 10px 8px 10px 8px;
+    background-color: #000000;
+    color: #ffffff;
+    font-size: 20px;
+    font-family: 'Manrope', sans-serif;
+    font-weight: lighter;
+    border-radius: 7px;
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/feedbackInfo.css">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="./scripts/feedbackInfoValidation.js"></script>
+    <title>Feedback Submission Page</title>
+</head>
+<body>
+    <header id="header-container">
+        <a href="./index.html"><img src="./images/company-logo.png" alt="Cognizant Logo" id="company-logo"></a>
+        <h2>Add Your Feedback</h2></header>
+    <div id="form-container">
+        <form action="#" id="form" onsubmit="return feedbackInfoValidator()">
+            <label for="prescription-id">Prescription ID:</label>
+            <input type="text" name="prescription-id" id="prescription-id" placeholder="Unique Prescription ID" autocomplete="off" required> <br>
+            <span id="pres-id-notif" style="color: #fa0000; font-size: 13px; font-family: 'Manrope', sans-serif; font-style: italic;"></span> <br>
+            <br>
+            <label for="consultation-date">Consultation Date:</label>
+            <input type="date" name="consultation-date" id="consultation-date" placeholder="Date of Visit" autocomplete="off" required> <br>
+            <span id="consult-date-notif" style="color: #fa0000; font-size: 13px; font-family: 'Manrope', sans-serif; font-style: italic;"></span> <br>
+            <br>
+            <label for="doctor-name">Doctor Name:</label>
+            <input type="text" name="doctor-name" id="doctor-name" placeholder="Referred Doctor Name" autocomplete="off" required> <br>
+            <br>
+            <label for="problem-desc">Problem Description:</label>
+            <input type="text" name="problem-desc" id="problem-desc" placeholder="Issues and Symptoms" autocomplete="off" required> <br>
+            <span id="problem-desc-notif" style="color: #fa0000; font-size: 13px; font-family: 'Manrope', sans-serif; font-style: italic;"></span> <br>
+            <br>
+            <label for="notes">Additional Notes:</label>
+            <input type="text" name="notes" id="notes" placeholder="Notes or Feedback" autocomplete="off" required> <br>
+            <span id="feedback-notif" style="color: #fa0000; font-size: 13px; font-family: 'Manrope', sans-serif; font-style: italic;"></span> <br>
+            <br>
+
+            <button type="submit" id="submit-btn">Add Feedback</button>
+            <button type="reset" id="reset-btn">Reset Entries</button>
+        </form>
+    </div>
+    <footer id="footer-container">
+        <h3 id="footer-text">&copy; 2021 Created Under GenC Training Programme</h3>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/generateBill.css">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/prescriptionInfo.css">
+    <script type="text/javascript" src="./scripts/prescriptionDetailsValidation.js"></script>
+    <title>Add new Prescription Details</title>
+</head>
+<body>
+    <header id="header-container">
+        <a href="./index.html"><img src="./images/company-logo.png" alt="Cognizant Logo" id="company-logo"></a>
+        <h2>Prescription Details</h2>
+    </header>
+    <div id="form-container">
+        <form action="#" onsubmit="return prescriptionDetailsValidator()" id="form">
+            <label for="prescription-date">Prescription Date:</label>
+            <input type="date" name="prescription-date" id="prescription-date" placeholder="Date of prescription" autocomplete="off" required> <br>
+            <br>
+            <label for="doctor-id">Doctor ID:</label>
+            <input type="text" name="doctor-id" id="doctor-id" placeholder="Doctor's Unique ID" autocomplete="off" required> <br>
+            <span id="doctor-id-notif" style="color: #fa0000; font-size: 13px; font-family: 'Manrope', sans-serif; font-style: italic;"></span> <br>
+            <br>
+            <label for="patient-number">Patient Number:</label>
+            <input type="text" name="patient-number" id="patient-number" placeholder="Unique Patient No" autocomplete="off" required> <br>
+            <span id="patient-number-notif" style="color: #fa0000; font-size: 13px; font-family: 'Manrope', sans-serif; font-style: italic;"></span> <br>
+            <br>
+            <label for="problem-desc">Patient's Problem Description:</label>
+            <input type="text" name="problem-desc" id="problem-desc" placeholder="Patient's Problems" autocomplete="off" required> <br>
+            <span id="problem-desc-notif" style="color: #fa0000; font-size: 13px; font-family: 'Manrope', sans-serif; font-style: italic;"></span> <br>
+            <br>
+            <label for="prescribed-med-name">Prescribed Medicine Name:</label>
+            <input type="text" name="prescribed-med-name" id="prescribed-med-name" placeholder="Prescribed Med Name" autocomplete="off" required> <br>
+            <span id="pres-medName-notif" style="color: #fa0000; font-size: 13px; font-family: 'Manrope', sans-serif; font-style: italic;"></span> <br>
+            <br>
+            <label for="alternate-med-name">Alternate Medicine Name:</label>
+            <input type="text" name="alternate-med-name" id="alternate-med-name" placeholder="Alternate Medicine Name" autocomplete="off" required> <br>
+            <span id="alt-medName-notif" style="color: #fa0000; font-size: 13px; font-family: 'Manrope', sans-serif; font-style: italic;"></span> <br>
+            <br>
+            <label for="consumption-qty">Consumption Quantity:</label>
+            <input type="text" name="consumption-qty" id="consumption-qty" placeholder="Qty to be consumed" autocomplete="off" required> <br>
+            <span id="consumption-qty-notif" style="color: #fa0000; font-size: 13px; font-family: 'Manrope', sans-serif; font-style: italic;"></span> <br>
+            <br>
+            <label for="med-dosage">Prescribed Medicine Dosage:</label>
+            <input type="text" name="med-dosage" id="med-dosage" placeholder="Recommended Dosage" autocomplete="off" required> <br>
+            <span id="med-dosage-notif" style="color: #fa0000; font-size: 13px; font-family: 'Manrope', sans-serif; font-style: italic;"></span> <br>
+            <br>
+            <label for="notes">Additional Notes:</label>
+            <input type="text" name="notes" id="notes" placeholder="Any additional info" autocomplete="off" required> <br>
+            <br>
+            <label for="next-consultation-date">Next Consultation Date:</label>
+            <input type="date" name="next-consultation-date" id="next-consultation-date" placeholder="Next Date of Visit" autocomplete="off" required> <br>
+            <br>
+            <label for="consultation-id">Consultation ID:</label>
+            <input type="text" name="consultation-id" id="consultation-id" placeholder="Unique Consultation ID" autocomplete="off" required> <br>
+            <br>
+            <label for="prescription-id">Prescription ID:</label>
+            <input type="text" name="prescription-id" id="prescription-id" placeholder="Unique Prescription ID" autocomplete="off" required> <br>
+            <br>
+            <!--  <label for="clerk-id">Clerk ID:</label>
+            <input type="text" name="clerk-id" id="clerk-id" placeholder="Unique ID"> <br>
+            <br>    --->
+
+            <button type="submit" id="submit-btn">Add Prescription</button>
+            <button type="reset" id="reset-btn">Reset Entries</button>
+        </form>
+    </div>
+    <footer id="footer-container">
+        <h3 id="footer-text">&copy; 2021 Created Under GenC Training Programme</h3>
+    </footer>
+</body>
+</html>
